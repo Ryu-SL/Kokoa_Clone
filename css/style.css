@@ -36,14 +36,3 @@ a{
 .main-screen{
   margin: 0 var(--horizontal-space);
 }
-
-@media screen and (min-width: 450px){
-  body{
-    display: none;  
-  }
-}
-@media screen and (max-height: 450px){
-  body{
-    display: none;  
-  }
-}
