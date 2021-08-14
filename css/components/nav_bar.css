@@ -1,0 +1,75 @@
+.nav{
+  background-color: #f9f9fa;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 20px 40px;
+  position: fixed;
+  margin-bottom: 5px;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.nav__list{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.nav__link{
+  color: #2e363e;
+  position: relative;
+}
+.nab__notification{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  color: white;
+  font-weight: 600;
+  width: 22px;
+  height: 22px;
+  border-radius: 11px;
+  position: absolute;
+  bottom: 16px;
+  left: 21px;
+}
+
+.nab__notification{
+  animation: navNotificationAnimation 2s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+@keyframes navNotificationAnimation{
+  0%{
+    transform: none;
+  }
+  50%{
+    transform: translateY(-3px) rotateY(360deg);
+  }
+  100%{
+    transform: none;
+  }
+}
+
+@keyframes navBtnAnimation{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+    transform: none;
+  }
+}
+.nav__btn{
+  opacity: 0;
+  transform: translateY(50px);
+  animation: navBtnAnimation 0.3s ease-in forwards;
+}
+.nav__btn:nth-child(2){
+  animation-delay: 0.3s;
+}
+.nav__btn:nth-child(3){
+  animation-delay: 0.6s;
+}
+.nav__btn:last-child{
+  animation-delay: 0.9s;
+}

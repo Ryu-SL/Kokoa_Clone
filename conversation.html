@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css\style.css">
+    <meta charset="utf-8">
+    <title>Kokoa talk clone</title>
+  </head>
+  <body id="chat_screen" class="background_fill">
+    <div class="status_bar background_fill">
+      <div class="status_bar__coloum">
+        <span>No Service</span>
+        <i class='fas fa-wifi'></i>
+      </div>
+      <div class="status_bar__coloum">
+        <span id="index_clock">00:00</span>
+      </div>
+      <div class="status_bar__coloum">
+        <span id="index_battery">101%</span>
+        <i class='fas fa-lg fa-battery-full'></i>
+        <span id="index_chargeNeeded">
+          <i class='fas fa-bolt'></i>
+        </span>
+      </div>
+    </div>
+    <header class="screen-header chat-header background_fill">
+      <div class="screen-sub_header__column">
+        <a class="screen-sub_header__back" href="chat.html"><i class="fas fa-chevron-left fa-lg"></i></a>
+      </div>
+      <div class="screen-sub_header__column">
+        <h1 class="screen-header__title">Chat Room</h1>
+      </div>
+      <div class="screen-sub_header__column">
+        <div class="screen-header__icons">
+          <span><i class='fas fa-lg fa-search'></i></span>
+          <span><i class='fas fa-lg fa-bars'></i></span>
+        </div>
+      </div>
+    </header>
+    <main class="sub-screen">
+      <div class="open_date">
+        <span id="conversation_date">Day, Mon DD,YYYY</span>
+      </div>
+      <div class="chat_box">
+        <div class="chat_box__row">
+          <img class="chat_box__avatar" src="images/daimon.jpg"/>
+          <div class="chat_box__content">
+            <span class="chat_box__username">Username</span>
+            <div class="chat_box__text">
+              <span class="chat_box__message_bubble message_bubble__other">Message</span>
+              <span class="chat_box__message_time">00:00</span>
+            </div>
+          </div>
+        </div>
+        <div class="chat_box__row row__self">
+         <div class="chat_box__content">
+            <div class="chat_box__text">
+              <span class="chat_box__message_bubble message_bubble__slef">Message</span>
+              <span class="chat_box__message_time">00:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form class="conversation_form">
+        <div class="textbox">
+          <div class="textbox__column">
+            <i class="fas fa-plus-square"></i>
+          </div>
+          <div class="textbox__column">
+            <input id="conversation_text_input" class="textbox__text" type="text" placeholder="Write a message" />  
+            <div class="textbox__icon">
+              <i class="far fa-smile-wink fa-lg"></i>
+            </div>
+            <button class="textbox__submit">
+              <i class="fas fa-arrow-up"></i>
+            </button>
+          </div>
+        </div>
+        <div id="keyboard" class="hidden">
+          <div class="keyboard__row">
+            <div class="keyboard__btn"><span>q</span></div>
+            <div class="keyboard__btn"><span>w</span></div>
+            <div class="keyboard__btn"><span>e</span></div>
+            <div class="keyboard__btn"><span>r</span></div>
+            <div class="keyboard__btn"><span>t</span></div>
+            <div class="keyboard__btn"><span>y</span></div>
+            <div class="keyboard__btn"><span>u</span></div>
+            <div class="keyboard__btn"><span>i</span></div>
+            <div class="keyboard__btn"><span>o</span></div>
+            <div class="keyboard__btn"><span>p</span></div>
+            <!--qwertyuiop -->
+          </div>
+          <div class="keyboard__row">
+            <div class="keyboard__btn"><span>a</span></div>
+            <div class="keyboard__btn"><span>s</span></div>
+            <div class="keyboard__btn"><span>d</span></div>
+            <div class="keyboard__btn"><span>f</span></div>
+            <div class="keyboard__btn"><span>g</span></div>
+            <div class="keyboard__btn"><span>h</span></div>
+            <div class="keyboard__btn"><span>j</span></div>
+            <div class="keyboard__btn"><span>k</span></div>
+            <div class="keyboard__btn"><span>l</span></div>
+          </div>
+          <div class="keyboard__row">
+            <div class="keyboard__btn"><span>z</span></div>
+            <div class="keyboard__btn"><span>x</span></div>
+            <div class="keyboard__btn"><span>c</span></div>
+            <div class="keyboard__btn"><span>v</span></div>
+            <div class="keyboard__btn"><span>b</span></div>
+            <div class="keyboard__btn"><span>n</span></div>
+            <div class="keyboard__btn"><span>m</span></div>
+            <div class="keyboard__btn"><span><</span></div>
+          </div>
+          <div class="keyboard__row">
+            <div class="keyboard__btn long_btn"><span>space</span></div>
+            <!--(num)(lan)(mike)(space)(return) -->
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <span>&copy; 2021 SL</span>
+    </footer>
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+    <script src="components.js"></script>
+    <script src="keyboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+.icons{
+  margin: 20px 0;
+  border-bottom: var(--grey-border);
+}
+.icons__row{
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+}
+.icons__icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+.icons__icon span{
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.user-component{
+  margin-right: 4px;
+}
+
+.more_suggestions{
+  padding-top: 10px;
+}
+.more_suggestions__title{
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.icons__icon__background{
+  width: 40px;
+  height: 40px;
+  background-color: yellow;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
